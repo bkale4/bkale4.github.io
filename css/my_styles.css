@@ -41,12 +41,13 @@ body.index {
 header.index {
 	background-color: #cfd8dc;
 	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
 }
 
 .logo {
-	position: absolute;
-	top: 10px;
-	right: 10px;
 	width: 80px;
 	height: auto;
 }
