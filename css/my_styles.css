@@ -1,23 +1,7 @@
 /* 	Developer: Isabella Kale 
 	Start Date: April 25, 2025 */
 	
-/* set the height of the body and html to 100%*/
-
 /* General Styles */
-body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	background-color: #f9f9f9;
-	color: #333;
-}
-  
-header {
-	background-color: #ddd;
-	padding: 1rem;
-	text-align: center;
-}
-  
 nav ul {
 	list-style-type: none;
 	padding: 0;
