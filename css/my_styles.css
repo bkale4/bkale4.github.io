@@ -2,36 +2,94 @@
 	Start Date: April 25, 2025 */
 	
 /* set the height of the body and html to 100%*/
-html, body {
-  height: 100%;
-  width: 100%;
-}
 
-.fullborder {
-	border: 2px solid black; 
-	border-collapse: collapse;
-	width:80%;
-}
-
-.fullborder th, td {
-	border: 1px solid rgb(175,175,175); 
-}
-
-#searchBox {
-	border: 2px solid black;
-	border-radius: 5px;
-	width: 25%;
-	padding: 5px;
-	display: inline-block;
-}
-
-#menuOptions {
+/* General Styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f9f9f9;
+	color: #333;
+  }
+  
+  header {
+	background-color: #ddd;
+	padding: 1rem;
 	text-align: center;
-	display: inline-block;
-}
-
-
-#searchBox input[type=submit] {
-	margin-top: 2%;
-	margin-left: 80%;
-}
+  }
+  
+  nav ul {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	background-color: #bbb;
+	margin: 0;
+  }
+  
+  nav ul li {
+	margin: 0 15px;
+  }
+  
+  nav ul li a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+  }
+  
+  main {
+	padding: 2rem;
+  }
+  
+  footer {
+	text-align: center;
+	padding: 1rem;
+	background-color: #ddd;
+	margin-top: 2rem;
+  }
+  
+  /* Modern Minimalist */
+  body.modern {
+	background-color: #ffffff;
+	color: #2c2c2c;
+  }
+  header.modern {
+	background-color: #e0e0e0;
+  }
+  
+  /* Rustic Farmhouse */
+  body.rustic {
+	background-color: #f4f1ee;
+	color: #5b3e2b;
+  }
+  header.rustic {
+	background-color: #d8c3a5;
+  }
+  
+  /* Bohemian Eclectic */
+  body.boho {
+	background-color: #fff7f0;
+	color: #814c4a;
+  }
+  header.boho {
+	background-color: #f6c5af;
+  }
+  
+  /* Industrial Urban */
+  body.urban {
+	background-color: #2e2e2e;
+	color: #dcdcdc;
+  }
+  header.urban {
+	background-color: #4a4a4a;
+  }
+  
+  /* Scandinavian Simplicity */
+  body.scand {
+	background-color: #f0f5f7;
+	color: #444;
+  }
+  header.scand {
+	background-color: #e1ebf0;
+  }
+  
