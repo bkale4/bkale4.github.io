@@ -31,6 +31,25 @@ footer {
 	background-color: #ddd;
 	margin-top: 2rem;
 }
+
+/* Index Page */
+body.index {
+	background-color: #ffffff;
+	color: #333333;
+}
+  
+header.index {
+	background-color: #cfd8dc;
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 80px;
+	height: auto;
+}
   
 /* Modern Minimalist */
 body.modern {
