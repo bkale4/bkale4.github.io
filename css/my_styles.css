@@ -10,86 +10,107 @@ body {
 	padding: 0;
 	background-color: #f9f9f9;
 	color: #333;
-  }
+}
   
-  header {
+header {
 	background-color: #ddd;
 	padding: 1rem;
 	text-align: center;
-  }
+}
   
-  nav ul {
+nav ul {
 	list-style-type: none;
 	padding: 0;
 	display: flex;
 	justify-content: center;
 	background-color: #bbb;
 	margin: 0;
-  }
+}
   
-  nav ul li {
+nav ul li {
 	margin: 0 15px;
-  }
+}
   
-  nav ul li a {
+nav ul li a {
 	text-decoration: none;
 	color: #000;
 	font-weight: bold;
-  }
+}
   
-  main {
+main {
 	padding: 2rem;
-  }
+}
   
-  footer {
+footer {
 	text-align: center;
 	padding: 1rem;
 	background-color: #ddd;
 	margin-top: 2rem;
-  }
+}
   
-  /* Modern Minimalist */
-  body.modern {
+/* Modern Minimalist */
+body.modern {
 	background-color: #ffffff;
 	color: #2c2c2c;
-  }
-  header.modern {
+}
+
+header.modern {
 	background-color: #e0e0e0;
-  }
+}
   
-  /* Rustic Farmhouse */
-  body.rustic {
+/* Rustic Farmhouse */
+body.rustic {
 	background-color: #f4f1ee;
 	color: #5b3e2b;
-  }
-  header.rustic {
-	background-color: #d8c3a5;
-  }
+}
   
-  /* Bohemian Eclectic */
-  body.boho {
+header.rustic {
+	background-color: #d8c3a5;
+}
+  
+/* Bohemian Eclectic */
+body.boho {
 	background-color: #fff7f0;
 	color: #814c4a;
-  }
-  header.boho {
+}
+
+header.boho {
 	background-color: #f6c5af;
-  }
+}
   
-  /* Industrial Urban */
-  body.urban {
+/* Industrial Urban */
+body.urban {
 	background-color: #2e2e2e;
 	color: #dcdcdc;
-  }
-  header.urban {
+}
+
+header.urban {
 	background-color: #4a4a4a;
-  }
+}
   
-  /* Scandinavian Simplicity */
-  body.scand {
+/* Scandinavian Simplicity */
+body.scand {
 	background-color: #f0f5f7;
 	color: #444;
-  }
-  header.scand {
+}
+
+header.scand {
 	background-color: #e1ebf0;
-  }
+}
+
+/* Ensure layout responsiveness */
+@media (max-width: 768px) {
+	nav ul {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	nav ul li {
+	  margin: 10px 0;
+	}
+  
+	main {
+	  padding: 1rem;
+	}
+}
   
