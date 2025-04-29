@@ -135,22 +135,25 @@ section.row div:hover {
   
 /* Modern Minimalist */
 body.modern {
-	background-color: #ffffff;
-	color: #2c2c2c;
+	background: linear-gradient(to bottom, #f7f7f7, #e0e0e0);
+	color: #1a1a1a;
 }
 
 header.modern {
-	background-color: #e0e0e0;
+	background-color: #f0f0f0;
+	color: #1a1a1a;
 }
   
 /* Rustic Farmhouse */
 body.rustic {
-	background-color: #f4f1ee;
-	color: #5b3e2b;
+	background: linear-gradient(to bottom, #e8d5b7, #d1bfa3, #b8a189);
+	color: #4b2e1e;
+  
 }
   
 header.rustic {
-	background-color: #d8c3a5;
+	background-color: #8b5a2b;
+	color: #f5f0eb;
 }
   
 /* Bohemian Eclectic */
@@ -161,16 +164,18 @@ body.boho {
 
 header.boho {
 	background-color: #ff9aa2;
+	color: #7d4c4c;
 }
   
 /* Industrial Urban */
 body.urban {
-	background-color: #2e2e2e;
-	color: #dcdcdc;
+	background: linear-gradient(to bottom, #3a3a3a, #1e1e1e);
+	color: #e0e0e0;
 }
 
 header.urban {
-	background-color: #4a4a4a;
+	background-color: #212121;
+	color: #e0e0e0;
 }
 
 /* Ensure layout responsiveness */
