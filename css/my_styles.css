@@ -155,12 +155,12 @@ header.rustic {
   
 /* Bohemian Eclectic */
 body.boho {
-	background-color: #fff7f0;
-	color: #814c4a;
+	background: linear-gradient(to right, #f9d29d, #ffd1ff, #c2f0f7);
+  	color: #5e2b2b;
 }
 
 header.boho {
-	background-color: #f6c5af;
+	background-color: #ff9aa2;
 }
   
 /* Industrial Urban */
