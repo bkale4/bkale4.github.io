@@ -63,7 +63,7 @@ section.row {
 section.row div {
 	background-color: #f5f5f5;
 	padding: 1rem;
-	width: 250px; /* was 300px, now smaller */
+	width: 400px;
 	text-align: center;
 	border: 1px solid #ccc;
 	border-radius: 8px;
