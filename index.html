@@ -51,10 +51,37 @@
         </div>
        
       </section>
+
+      <section>
+        <form onsubmit="showPopup(event)">
+          <h2>Sign Up for Design Updates!</h2>
+          
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+      
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+      
+          <input type="submit" value="Sign Up">
+        </form>
+
+        <p id="thank-you" style="display: none; text-align: center; font-size: 1.2rem; margin-top: 20px;">
+          Thanks for signing up! Check your inbox for updates.
+        </p>
+      </section>      
     </main>
 
   <footer>
     <p>&copy; 2025 Isabella Kale</p>
   </footer>
+
+  <script>
+    function showPopup(event) { 
+      event.preventDefault();
+      alert("Thank you for signing up! We'll keep you updated with the latest design trends.");
+      document.querySelector("form").style.display = "none";
+      document.getElementById("thank-you").style.display = "block";
+    } 
+  </script>
 </body>
 </html>
