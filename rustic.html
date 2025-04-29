@@ -18,7 +18,6 @@
       <li><a href="rustic.html">Rustic Farmhouse</a></li>
       <li><a href="boho.html">Bohemian Eclectic</a></li>
       <li><a href="urban.html">Industrial Urban</a></li>
-      <li><a href="scand.html">Scandinavian Simplicity</a></li>
     </ul>
   </nav>
 
@@ -42,8 +41,36 @@
 
     <section>
       <h2>Gallery</h2>
-      <img src="images/rustic1.jpg" alt="Rustic living room with exposed beams" width="300" /> <!--change this-->
-      <img src="images/rustic2.jpg" alt="Farmhouse kitchen with wood cabinets" width="300" /> <!--change this-->
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="images/RusticLivingRoom.jpg" alt="Rustic living room with exposed beams" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="images/RusticKitchen.jpg" alt="Farmhouse kitchen with wood cabinets"style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="images/RusticBedroom.jpg" alt="Rustic farmhouse bedroom with exposed wood beams, cozy bedding, and vintage decor"style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/RusticExterior.jpg" alt="Rustic home exterior with natural wood, stone accents, and a welcoming front porch" style="width:100%">
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+      </div>
     </section>
 
     <section>
@@ -57,5 +84,34 @@
   <footer>
     <p>&copy; 2025 Isabella Kale.</p>
   </footer>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
 </body>
 </html>

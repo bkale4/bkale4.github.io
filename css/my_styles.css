@@ -70,11 +70,68 @@ section.row div {
 	transition: transform 0.3s;
 }
   
-  
 section.row div:hover {
 	transform: scale(1.05);
 }
   
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 800px;
+	position: relative;
+	margin: auto;
+}
+
+.slideshow-container img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
+
+/* Hide all slides by default */
+.mySlides {
+	display: none;
+}
+  
+/* Arrows (previous and next) */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: black;
+	font-weight: bold;
+	font-size: 48px;
+	transition: 0.3s;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+  
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+  
+/* Dots under slideshow */
+.dot {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+  
+.active {
+	background-color: #717171;
+} 
   
 /* Modern Minimalist */
 body.modern {
@@ -114,16 +171,6 @@ body.urban {
 
 header.urban {
 	background-color: #4a4a4a;
-}
-  
-/* Scandinavian Simplicity */
-body.scand {
-	background-color: #f0f5f7;
-	color: #444;
-}
-
-header.scand {
-	background-color: #e1ebf0;
 }
 
 /* Ensure layout responsiveness */
